@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>World Api</title>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script
+			src="https://kit.fontawesome.com/6495c15c01.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- header section  -->
+		<header class="text-center">
+			<h3 class="text-4xl my-4">AI Universe Hub</h3>
+			<button class="btn btn-primary bg-red-500 m-4" onclick="sortByDate()">Sort By Date</button>
+		</header>
+		<!-- main section  -->
+		<main class="mx-auto flex flex-col items-center">
+			<!-- spinner section  -->
+			<section class="loder">
+				<div class="radial-progress hidden" id="spinner"style="--value:70;">70%</div>
+			</section>
+			<!-- content sectiion  -->
+			<div
+				id="content"
+				class="container grid grid-cols-1 md:grid-cols-2   gap-4  m-4 lg:grid-cols-3"
+			>
+				
+			</div>
+			<!-- button section  -->
+			<button
+				id="showMore"
+				onclick="showMore()"
+				class="btn btn-primary bg-red-500"
+			>
+				ShowMore
+			</button>
+			<!-- modal section  -->
+			<section id="modal-section">
+				<input type="checkbox" id="my-modal-5" class="modal-toggle" />
+				<div id="modal-demo"class="modal">
+			
+					
+				</div>
+			</section>
+		</main>
+		<!-- js added  -->
+		<script src="./script/script.js"></script>
+	</body>
+</html>
